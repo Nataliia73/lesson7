@@ -1,0 +1,307 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.woff') format('woff2'),
+		url('../fonts/Gilroy-Medium.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff2') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1 {
+	font-family: Gilroy;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+body {
+	line-height: 1;
+}
+.block {
+	width: auto;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	width: 1440px;
+	margin: 0 auto;
+	background-color: antiquewhite;
+}
+h1 {
+	font-weight: 700;
+	color: rgb(36, 7, 7);
+	margin: 0 0 30px 0;
+	padding: 0 0 0 30px;
+}
+h2 {
+	font-weight: 500;
+	color: darkblue;
+	margin: 0 0 30px 0;
+	font-size: 30px;
+	padding: 0 0 0 30px;
+}
+.mark-div {
+	width: 600px;
+	height: 300px;
+	font-size: 20px;
+	padding: 20px;
+	box-shadow: 5px 10px 20px rgb(46, 31, 31);
+	margin: 0 auto 30px auto;
+	border-radius: 10px;
+}
+.color {
+	background-color: rgb(219, 23, 138);
+}
+.color-1 {
+	background-color: transparent;
+}
+.image {
+	background-color: rgb(162, 115, 223);
+	background-image: url(../img/photo-15.jpeg);
+	color: #fff;
+	margin: 0 0 30px 0;
+}
+.gradient {
+	background-image: linear-gradient(
+		to bottom,
+		rgba(255, 186, 221, 1) 7%,
+		rgba(255, 38, 150, 1) 29%,
+		rgba(48, 0, 193, 1) 100%
+	);
+}
+.gradient-1 {
+	background-image: radial-gradient(
+		ellipse at center,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(248, 181, 0, 1) 21%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(0, 201, 0, 1) 70%,
+		rgba(161, 201, 0, 1) 94%,
+		rgba(251, 223, 147, 1) 100%
+	);
+}
+.repeat {
+	width: 600px;
+	height: 300px;
+	padding: 20px;
+	box-shadow: 5px 10px 20px rgb(189, 21, 21);
+	margin: 0 0 30px 0;
+	border-radius: 10px;
+	background-image: url(../img/cat.png);
+}
+.no-repeat {
+	background: paleturquoise url(../img/cat.png) no-repeat;
+}
+.repeat-x {
+	background: paleturquoise url(../img/cat.png) repeat-x;
+}
+.repeat-y {
+	background: paleturquoise url(../img/cat.png) repeat-y;
+}
+.spase {
+	background: rgb(221, 224, 224) url(../img/cat.png) space;
+}
+.round {
+	background: paleturquoise url(../img/cat.png) round;
+}
+.coner_left {
+	background: rgb(114, 236, 90) url(../img/cat\ big.png) no-repeat 0% 0%;
+}
+.left {
+	background: rgb(44, 228, 228) url(../img/cat\ big.png) no-repeat 0% 50%;
+}
+.right {
+	background: rgb(193, 212, 107) url(../img/cat\ big.png) no-repeat 90% 5%;
+}
+.center {
+	background: rgb(212, 97, 193) url(../img/cat\ big.png) no-repeat 50%;
+}
+.coner_right {
+	background: rgb(75, 72, 214) url(../img/cat\ big.png) no-repeat 100% 100%;
+}
+.attachment-scroll {
+	font-size: 20px;
+	width: 500px;
+	margin: 0 0 30px 0;
+	padding: 20px;
+	background: url(../img/flower.jpg) 0 0 no-repeat fixed;
+}
+.attachment-fixed {
+	font-size: 20px;
+	width: 500px;
+	margin: 0 0 30px 0;
+	padding: 20px;
+	background: url(../img/flower.jpg) 0 0 no-repeat scroll;
+}
+.size-1 {
+	background: url(../img/rainbow.jpg) 0 0 / auto auto no-repeat;
+	width: 70%;
+}
+.size-2 {
+	background: url(../img/rainbow.jpg) 0 0/100% auto no-repeat;
+	width: 70%;
+}
+.size-3 {
+	background: url(../img/rainbow.jpg) 0 0 / auto 100% no-repeat;
+	width: 70%;
+}
+.size-4 {
+	background: url(../img/rainbow.jpg) 0 0 /100% 100% no-repeat;
+	width: 70%;
+}
+.size-5 {
+	background: url(../img/rainbow.jpg) 0 0 / contain no-repeat;
+	width: 70%;
+}
+.size-6 {
+	background: url(../img/rainbow.jpg) 0 0 / cover no-repeat;
+	width: 70%;
+}
+.size-7 {
+	background: url(../img/rainbow.jpg) 0 0 /250px 150px no-repeat;
+	width: 70%;
+}
+.one {
+	width: 80%;
+	background: url(../img/cat\ big.png) 0 0/ 200px no-repeat,
+		url(../img/flower.jpg) 100% 100%/200px no-repeat,
+		url(../img/111.jpg) 0 0/100% no-repeat;
+}
+.one-1 {
+	width: 80%;
+	background: url(..0/img/flower.jpg) 50% 50%/300px no-repeat,
+		url(../img/photo-15.jpeg) 30% 50%/300px no-repeat,
+		url(../img/flower.jpg) 90% 10%/100px no-repeat,
+		url(../img/111.jpg) 0 0/100% no-repeat;
+}
+.exercise {
+	color: rgb(228, 22, 135);
+}
+.paragraf {
+	font-size: 30px;
+	color: rgb(18, 18, 187);
+	font-style: italic;
+	margin: 0 0 30px 0;
+	padding: 0 0 0 30px;
+}
+.list {
+	width: 800px;
+	margin: 30px;
+	background-color: darkseagreen;
+	padding: 20px;
+}
+.list_line {
+	margin: 20px;
+	line-height: 20px;
+	background: url(../img/cat.png) 100% 100% no-repeat;
+}
+.contact {
+	max-width: 280px;
+	background-color: #fff;
+	padding: 20px;
+	margin: 0 auto 30px auto;
+}
+.contact ul {
+	margin: 30px 0;
+}
+.contact_info {
+	margin: 0px 0px 16px 0px;
+	font-size: 14px;
+	min-height: 24px;
+	padding: 3px 0 0 30px;
+}
+.place {
+	background: url(../img/place_24px.svg) 0 0 / 24px no-repeat;
+}
+.phone {
+	background: url(../img/smartphone_24px.svg) 0 0 / 24px no-repeat;
+}
+.mail {
+	background: url(../img/email_24px.svg) 0 0 / 24px no-repeat;
+}
+.time {
+	background: url(../img/timer_24px.svg) 0 0 / 24px no-repeat;
+}
+.hero {
+	background: url(../img/BG\ Image.jpg) 0 0 / cover no-repeat;
+	margin: 0 0 100px 0;
+	width: 100%;
+	height: 800px;
+	padding-top: 280px;
+	padding-left: 210px;
+}
+.hero_titlle {
+	max-width: 583px;
+	max-height: 112px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 56px;
+	line-height: 56px;
+	color: #fff;
+	margin: 0 0 48px 0;
+}
+.hero_link {
+	display: inline-block;
+	text-align: center;
+	padding: 20px 50px 20px 10px;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 0.15px;
+	background: url(../img/Button\ Treatment\ 48px.svg) right no-repeat,
+		linear-gradient(
+			120deg,
+			rgba(196, 9, 16, 1) 0%,
+			rgba(196, 9, 12, 1) 80%,
+			rgba(226, 10, 12, 1) 80%,
+			rgba(226, 9, 12, 1) 100%
+		);
+}
+.hero_link a {
+	color: white;
+	text-transform: uppercase;
+}
